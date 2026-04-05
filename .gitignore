@@ -1,0 +1,20 @@
+node_modules
+.expo
+.expo-shared
+dist
+web-build
+build
+*.log
+.DS_Store
+.env
+apps/beer-snap/.env
+
+# Supabase
+supabase/.temp
+supabase/.env
+
+# IDE
+.vscode
+.idea
+.vercel
+.env*.local

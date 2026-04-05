@@ -1,0 +1,26 @@
+{
+  "name": "beer-snap-monorepo",
+  "private": true,
+  "engines": {
+    "node": "20.x"
+  },
+  "workspaces": [
+    "apps/*",
+    "packages/*"
+  ],
+  "scripts": {
+    "dev": "npm run dev -w apps/beer-snap",
+    "dev:web": "npm run dev:web -w apps/beer-snap",
+    "dev:ios": "npm run dev:ios -w apps/beer-snap",
+    "dev:android": "npm run dev:android -w apps/beer-snap",
+    "lint": "npm run lint -w apps/beer-snap",
+    "typecheck": "npm run typecheck -w apps/beer-snap",
+    "test": "npm run test -w apps/beer-snap"
+  },
+  "devDependencies": {
+    "typescript": "~5.9.2"
+  },
+  "dependencies": {
+    "react-native-web": "~0.21.0"
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "compilerOptions": {
+    "target": "ES2020",
+    "module": "ESNext",
+    "lib": ["ES2020", "DOM"],
+    "jsx": "react-jsx",
+    "moduleResolution": "bundler",
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "strict": true,
+    "noUncheckedIndexedAccess": true,
+    "noImplicitOverride": true,
+    "noFallthroughCasesInSwitch": true,
+    "skipLibCheck": true,
+    "baseUrl": ".",
+    "paths": {
+      "@beer-snap/ui": ["packages/ui/src"],
+      "@beer-snap/ui/*": ["packages/ui/src/*"],
+      "@beer-snap/domain": ["packages/domain/src"],
+      "@beer-snap/domain/*": ["packages/domain/src/*"],
+      "@beer-snap/data": ["packages/data/src"],
+      "@beer-snap/data/*": ["packages/data/src/*"]
+    }
+  }
+}

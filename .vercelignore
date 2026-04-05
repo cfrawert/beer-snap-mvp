@@ -1,0 +1,3 @@
+apps/beer-snap/.env
+apps/beer-snap/.env.local
+apps/beer-snap/.env.*.local

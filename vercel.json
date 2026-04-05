@@ -1,0 +1,20 @@
+{
+  "installCommand": "npm install",
+  "buildCommand": "cd apps/beer-snap && npx expo export --platform web",
+  "outputDirectory": "apps/beer-snap/dist",
+  "cleanUrls": true,
+  "rewrites": [
+    {
+      "source": "/share/p/:postId",
+      "destination": "/api/share/p/:postId"
+    },
+    {
+      "source": "/u/:handle",
+      "destination": "/u/[handle]"
+    },
+    {
+      "source": "/p/:postId",
+      "destination": "/p/[postId]"
+    }
+  ]
+}
